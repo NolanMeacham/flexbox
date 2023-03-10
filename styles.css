@@ -49,6 +49,12 @@
     border: 1px solid #5995DA;
 }
 
+.social,
+.subscribe {
+  align-self: flex-end;
+  margin-bottom: 20px;
+}
+
 .photo-grid-container {
     display: flex;
     justify-content: center;
@@ -67,6 +73,14 @@
     height: 300px;
   }
 
+  .first-item {
+    order: 1;
+  }
+  
+  .last-item {
+    order: -1;
+  }
+
   .photo-grid-container-2 {
     display: flex;
     justify-content: center;
@@ -78,6 +92,8 @@
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
+    /* flex-direction: row-reverse;   <-- use this to reverse the order of each row */
+    align-items: center;
   }
   
   .photo-grid-item-2 {
